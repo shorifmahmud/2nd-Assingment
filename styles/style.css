@@ -11,8 +11,10 @@ h1 {
 }
 
 .container {
+    align-items: center;
     display: flex;
     width: 70%;
+    margin-left: 10%;
     color: #FFFFFF;
     background-color: black;
     border-radius: 15px;
@@ -40,13 +42,81 @@ h1 {
     padding: auto;
 }
 
+.blogs-container {
+    display: grid;
+    grid-template-columns: box: 4, 1fr;
+    repeat(3, 1fr);
+    grid-row-gap: 25px;
+}
+
 .box {
-    width: 312px;
-    padding: 10px;
+    width: 150px;
+    padding: 10px 10px;
+    height: 150px;
+    background-color: black;
+    font-size: 10px;
+    text-align: center;
+}
+
+
+.match {
+    background-color: red;
+    color: #FFFFFF;
 }
 
 .blogs {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-row-gap: 26px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.blog {
+    width: 312px;
+    height: 362px;
+    row-gap: 24px;
+}
+
+.blog .blog-transfer img {
+    width: 200px;
+    height: 100px;
+}
+
+.blog-info {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.blog-taitel {
+    font-size: 8px;
+}
+
+.blog-duration {
+    font-size: 7px;
+}
+
+.message {
+    font-size: 8px;
+}
+
+footer {
+    width: 100%;
+    margin-left: 0;
+    align-items: center;
+    background-color: black;
+
+}
+
+.goal {
+    padding-top: 10px;
+    font-size: 15px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.links-button a {
+    text-decoration: none;
+}
+
+.links-button {
+    row-gap: 20px;
 }
